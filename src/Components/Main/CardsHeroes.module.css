@@ -1,0 +1,160 @@
+.motherCard {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+.cardHeroes {
+  position: relative;
+  margin: 10px;
+  white-space: nowrap;
+  transition: 0.25s ease-in-out;
+}
+
+.cardHeroes:hover {
+  transform: scale(1.05);
+  transition: 0.25s ease-in-out;
+}
+
+.cardHeroes img {
+  border-radius: 2rem;
+}
+
+.star {
+  position: absolute;
+  z-index: 15;
+  fill: red;
+  width: 30px;
+  transition: 0.25s ease-in-out;
+}
+
+.star:hover {
+  background-color: blue;
+  border-radius: 2rem;
+  transform: scale(1.25);
+  transition: 0.25s ease-in-out;
+}
+
+.postStar {
+  z-index: 10;
+  position: absolute;
+  background-color: blue;
+  width: 100px;
+  height: 22px;
+  left: -1px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  padding-left: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.postStarDel {
+  z-index: 10;
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 22px;
+  left: -1px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.starSelected {
+  position: absolute;
+  z-index: 15;
+  fill: none;
+  width: 30px;
+  transition: 0.25s ease-in-out;
+  stroke: blue;
+  stroke-width: 1;
+  stroke-dasharray: 0;
+  stroke-linecap: butt;
+}
+
+.starSelected:hover {
+  background-color: blue;
+  stroke: red;
+  fill: red;
+  border-radius: 2rem;
+  transform: scale(1.25);
+  transition: 0.25s ease-in-out;
+}
+
+.realisticShadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  z-index: -1;
+  transform: translate(-50%, -40%);
+  filter: blur(20px);
+}
+
+.cardHeroes:hover .realisticShadow {
+  width: 110%;
+  transform: translate(-50%, -50%);
+  transition: 0.25s ease-in-out;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 5;
+  height: 50px;
+  width: 160px;
+  background: linear-gradient(to top, black, #00000000);
+  bottom: 4px;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.ring {
+  position: absolute;
+  background-color: #f00;
+  top: -7px;
+  right: -7px;
+  width: 35px;
+  height: 35px;
+  z-index: 12;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px -5px #ff000015, 0 10px 10px -5px #ff000015,
+    0 15px 15px -5px #ff000015, 0 20px 20px -5px #ff000015;
+}
+
+.powers {
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  color: #fff;
+  font-weight: bold;
+}
+
+.cardHeroes p {
+  position: absolute;
+  margin: 5px auto;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}

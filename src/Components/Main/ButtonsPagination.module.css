@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+button,
+.span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background-color: red;
+  box-shadow: 0 5px 5px -5px #ff000015, 0 10px 10px -5px #ff000015,
+    0 15px 15px -5px #ff000015, 0 20px 20px -5px #ff000015;
+  border: 0px solid #ff000015;
+  cursor: pointer;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+}
+
+.btnPrevDisabled {
+  border-radius: 2rem 0 0 2rem;
+  cursor: default;
+  background-color: #ff000050;
+}
+
+.btnPrev {
+  border-radius: 2rem 0 0 2rem;
+}
+
+.span {
+  height: 30px;
+  padding: 10px 10px 0 10px;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+.btnNext {
+  border-radius: 0 2rem 2rem 0;
+}
+
+.btnNextDisabled {
+  border-radius: 0 2rem 2rem 0;
+  cursor: default;
+  background-color: #ff000050;
+}

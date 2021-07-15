@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background: linear-gradient(to top blue red);
+  padding: 1rem;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.main img {
+  max-width: 90%;
+}
+
+.button {
+  border-radius: 2rem;
+  font-weight: 900;
+  font-size: 1.25rem;
+  font-variant-caps: all-petite-caps;
+  letter-spacing: 1px;
+  width: 200px;
+  background-color: red;
+  padding: 1rem;
+  box-shadow: 0 5px 5px -5px #ff000015, 0 10px 10px -5px #ff000015,
+    0 15px 15px -5px #ff000015, 0 20px 20px -5px #ff000015;
+  transition: 0.25s all ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.025);
+  transition: 0.25s all ease-in-out;
+  color: white;
+}

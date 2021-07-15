@@ -1,0 +1,111 @@
+header {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  text-align: center;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.headerWrapper a {
+  margin: 1rem;
+}
+
+.wrapper {
+  margin: 1rem;
+  width: 40px;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrappercito {
+  width: 100%;
+  height: 5px;
+  margin: 3px;
+  background-color: black;
+}
+
+.x {
+  display: flex;
+  z-index: 101;
+  position: relative;
+  margin: 1rem;
+  width: 40px;
+  height: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.x1 {
+  z-index: 101;
+  border: 1px #fff;
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.x2 {
+  z-index: 101;
+  border: 1px #fff;
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.wrap {
+  z-index: 90;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+}
+
+.wrap a {
+  color: white;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+  }
+
+  .logo {
+    margin: 1rem;
+  }
+
+  .headerWrapper {
+    display: none;
+  }
+}
